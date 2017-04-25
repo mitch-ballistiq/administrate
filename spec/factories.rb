@@ -31,4 +31,8 @@ FactoryGirl.define do
   factory :payment do
     order
   end
+  
+  factory :series do
+    sequence(:name) { |n| "Series #{n}" }
+  end
 end
